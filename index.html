@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Speakers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <h1 style="padding-bottom:20px;">View our Featured Speakers for the Event</h1>
+    <p>Speakers are core contributors and industry thought leaders working at <span style="color:blue">companies</span> that push for innovation.</p>
+
+    <div id="cardDetails" class="card-details hidden">
+        <button id="closeButton" class="close-btn" onclick="closeInfoContainer()">×</button>
+        <div id="cardDetailsContent">
+        </div>
+    </div>
+
+    <!-- Swiper Container -->
+    <div class="swiper slide-container">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide card" onclick="showCardDetails('John Doe', 'Chief Marketing Officer', 'Acme Corp', 'images/image-1.jpg')">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/image-1.jpg" alt="John Doe" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">John Doe</h2>
+                    <h4 class="position">Chief Marketing Officer</h4>
+                    <p class="company">Acme Corp</p>
+                </div>
+            </div>
+            <div class="swiper-slide card" onclick="showCardDetails('John Doe', 'Chief Marketing Officer', 'Acme Corp', 'images/image-1.jpg')">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/image-1.jpg" alt="John Doe" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">John Doe</h2>
+                    <h4 class="position">Chief Marketing Officer</h4>
+                    <p class="company">Acme Corp</p>
+                </div>
+            </div>
+            <div class="swiper-slide card" onclick="showCardDetails('John Doe', 'Chief Marketing Officer', 'Acme Corp', 'images/image-1.jpg')">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/image-1.jpg" alt="John Doe" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">John Doe</h2>
+                    <h4 class="position">Chief Marketing Officer</h4>
+                    <p class="company">Acme Corp</p>
+                </div>
+            </div>
+            <div class="swiper-slide card" onclick="showCardDetails('John Doe', 'Chief Marketing Officer', 'Acme Corp', 'images/image-1.jpg')">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/image-1.jpg" alt="John Doe" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">John Doe</h2>
+                    <h4 class="position">Chief Marketing Officer</h4>
+                    <p class="company">Acme Corp</p>
+                </div>
+            </div>
+            <div class="swiper-slide card" onclick="showCardDetails('John Doe', 'Chief Marketing Officer', 'Acme Corp', 'images/image-1.jpg')">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/image-1.jpg" alt="John Doe" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">John Doe</h2>
+                    <h4 class="position">Chief Marketing Officer</h4>
+                    <p class="company">Acme Corp</p>
+                </div>
+            </div>
+            <div class="swiper-slide card" onclick="showCardDetails('John Doe', 'Chief Marketing Officer', 'Acme Corp', 'images/image-1.jpg')">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/image-1.jpg" alt="John Doe" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">John Doe</h2>
+                    <h4 class="position">Chief Marketing Officer</h4>
+                    <p class="company">Acme Corp</p>
+                </div>
+            </div>
+            <div class="swiper-slide card" onclick="showCardDetails('John Doe', 'Chief Marketing Officer', 'Acme Corp', 'images/image-1.jpg')">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/image-1.jpg" alt="John Doe" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">John Doe</h2>
+                    <h4 class="position">Chief Marketing Officer</h4>
+                    <p class="company">Acme Corp</p>
+                </div>
+            </div>
+            <div class="swiper-slide card" onclick="showCardDetails('John Doe', 'Chief Marketing Officer', 'Acme Corp', 'images/image-1.jpg')">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/image-1.jpg" alt="John Doe" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">John Doe</h2>
+                    <h4 class="position">Chief Marketing Officer</h4>
+                    <p class="company">Acme Corp</p>
+                </div>
+            </div>
+            <div class="swiper-slide card" onclick="showCardDetails('John Doe', 'Chief Marketing Officer', 'Acme Corp', 'images/image-1.jpg')">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/image-1.jpg" alt="John Doe" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">John Doe</h2>
+                    <h4 class="position">Chief Marketing Officer</h4>
+                    <p class="company">Acme Corp</p>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <!-- Swiper Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="button-related">
+        <img src="images/arrow.webp" alt="arrow" class="arrow">
+        <p class="notify">Click here to see<br> the full program</p>
+        <button class="btn">See the Program</button>
+      
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
