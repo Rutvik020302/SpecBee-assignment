@@ -70,29 +70,49 @@ body {
 }
 
 /* Card Content Styles */
+/* Base Styles */
+.arrow {
+    width: 50px;
+    margin-top: 60px;
+    margin-right: -200px;
+}
+
+/* Responsive Arrow */
+@media (max-width: 768px) {
+    .arrow {
+        width: 40px;
+        margin-right: -100px;
+        margin-top: 40px;
+    }
+}
+
 .card-content {
     margin-top: 20px;
     text-align: center;
 }
 
+/* Name Styling */
 .name {
-    color:#000000;
+    color: #000000;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
+/* Position Styling */
 .position {
     font-size: 14px;
     color: #000000;
     margin-bottom: 5px;
 }
 
+/* Company Styling */
 .company {
     font-size: 13px;
     color: #d8c8c8;
 }
 
+/* Button Container */
 .button-related {
     display: flex;
     justify-content: center;
@@ -101,16 +121,35 @@ body {
     gap: 40px; 
 }
 
+/* Responsive Button Container */
+@media (max-width: 768px) {
+    .button-related {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        gap: 20px;
+        margin-top: 40px;
+    }
+}
+
+/* Notification Text */
 .notify {
     font-size: 1rem;
     color: #555;
-    text-align: right; /* Align text to the right within the paragraph */
+    text-align: right;
 }
 
+/* Responsive Notify Text */
+@media (max-width: 768px) {
+    .notify {
+        text-align: center;
+        font-size: 0.9rem; /* Adjust text size on smaller screens */
+    }
+}
+
+/* Button Styles */
 .btn {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #007bff; /* Customize button color */
+    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -118,8 +157,35 @@ body {
     transition: background-color 0.3s;
 }
 
+/* Button Hover */
 .btn:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
+}
+
+/* Responsive Button */
+@media (max-width: 480px) {
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        width: 100%; /* Make buttons full-width on very small screens */
+    }
+}
+
+/* Additional Mobile Adjustments */
+@media (max-width: 480px) {
+    .name {
+        font-size: 16px;
+    }
+    .position {
+        font-size: 12px;
+    }
+    .company {
+        font-size: 12px;
+    }
+    .card-content {
+        margin-top: 10px;
+        padding: 0 10px; /* Add padding for better mobile display */
+    }
 }
 
 /* Swiper Navigation Buttons */
@@ -187,11 +253,11 @@ body {
 .close-button:hover {
     color: #ff0000;
 }
-.arrow{
-    width:50px;
-    margin-top:60px;
-    margin-right:-200px;
-}
+// .arrow{
+//     width:50px;
+//     margin-top:60px;
+//     margin-right:-200px;
+// }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
